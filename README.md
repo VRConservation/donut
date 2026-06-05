@@ -1,2 +1,2 @@
-# Predicting Wildfires
-Is not possible! But we tried it anyway.
+# Donut hole and landscape resiliency
+Insert abstract here.
