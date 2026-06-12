@@ -27,27 +27,21 @@ Our main aim was to identify where intervention matters most rather than just re
 ## Methodology
 The Shasta-Trinity region did not have a mechanical treatment feasibility dataset, so we developed one using the methodology developed by @tukman. Data sources differed slightly where slope came from USGS 3DEP, and treatable vegetation from Landfire's existing vegetation type. Data was processed using a combination of python scripts and tools from QGIS and ArcGIS Pro.
 
+
+The methodology feels more like this: historical fire absence plus crown-fire probability plus treatment context equals areas potentially vulnerable to severe fire under current conditions.
+
+
 # Donut holes & resilience
-are these places resilient, or simply overdue?
-
-What stands out to me is the **shift from generalized “bad fire year” narratives toward identifying concentrated areas of vulnerability** through the overlap of fire history gaps and crown-fire probability.
-
-The “donut hole” pattern in the Sierra/Nevada region is especially useful because it raises the question of **whether some landscapes are functionally more resilient or simply overdue for a major fire**. Your point about fragmented treatment on private parcels in the WUI is important; **there is a real herd immunity metaphor in fire hardening we need to pay attention to.**  
-
-the article is strongest when it frames the work as identifying concentrated vulnerability rather than “predicting wildfire.” 
-
-The methodology feels more like: historical fire absence + crown-fire probability + treatment context = areas potentially vulnerable to severe fire under current conditions.
-
-The really important systems story may actually be: climate stress + accumulated fuels + institutional weakening at the same time. That triad is what makes the current moment different.
+The “donut hole” pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. Your point about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that we need to consider. Shift from generalized narratives about “bad fire years” to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
 
 ## Avoided costs
-One thing this also made me think about was the 2014 Mokelumne Watershed Avoided Cost Analysis that suggested that treatment does not necessarily need to occur everywhere equally to produce landscape-scale benefits [@moke]. It modeled that something on the order of ~30% treatment in strategically connected areas materially altered subsequent fire behavior across larger watershed systems.
+The 2014 Mokelumne Watershed Avoided Cost Analysis,suggested that treatment doesn’t have to occur uniformly to provide benefits across larger areas [@moke]. The study modeled that about 30% treatment in strategically connected areas can significantly change fire behavior in larger watershed systems.
 
-What strikes me as most important there is not necessarily the exact number itself, but the larger systems implication behind it. The research seems to point toward a kind of ecological network resilience, where strategically treating enough of the right places may shift fire behavior across a broader landscape. In some ways, the herd immunity metaphor is useful here, not as a literal equivalence, but as a planning framework. If enough of a landscape is treated, connected, and stewarded appropriately, the overall probability of catastrophic crown fire may decline significantly even though not every acre is treated.
+What stands out is not just the specific number but the broader implications for systems. The research suggests a kind of resilience in ecological networks, where treating the right areas can influence fire behavior across wider landscapes. The metaphor of herd immunity is useful here, not as a direct comparison, but as a way to think about planning. If enough of a landscape is treated and cared for, the likelihood of severe crown fires may decrease, even if not every acre gets treated.
 
-That also helps bridge the conversation toward cultural burning and long-term stewardship. Mechanical thinning is probably best understood as a transitional phase needed to bring forests back within ecological carrying capacity after a century of suppression. Over time, prescribed fire and especially cultural burning become the more durable maintenance system, restoring the patchy and heterogeneous landscapes that historically limited fire intensity and spread.
+This perspective also connects to cultural burning and long-term stewardship. Mechanical thinning is likely best seen as a transitional step to restore forests to their natural capacity after a century of fire suppression. Over time, prescribed fire and especially cultural burning can become the lasting maintenance approach that restores the varied landscapes that historically limited fire intensity and spread.
 
-I increasingly think this same systems logic applies to communities as well. Forest tending and home hardening probably need to be understood as complementary resilience infrastructures rather than separate policy silos. A treated forest surrounding vulnerable communities behaves differently than an untreated one, just as hardened homes and defensible space function differently within landscapes burning at lower intensity. The interaction between those layers may matter as much as any single intervention.
+This same systems thinking applies to communities as well. Forest care and home hardening should be seen as complementary elements of resilience, not separate policies. A treated forest around vulnerable communities reacts differently than one that is untreated, just as hardened homes and defensible space perform differently in areas experiencing lower-intensity fires. The interaction between these elements may be as important as any individual intervention.
 
 ## Biomass and wood pathways
 We calculated the percent overlap between crown fire probability [@pyrologix] and mechanical treament feasibility for the four county Central Sierra region [@scenarioA] where the treatment feasibility is <35% slopes and within 1000' (~300m) of existing roads {numref}`over`. We did not examine this for the Shasta-Trinity county region since a treatment feasibility data layer does not yet exist.
@@ -65,3 +59,5 @@ Anecdotally, the four county region in the Central Sierra (Nevada, Placer, Sierr
 
 # Conclusions & next steps
 One potentially useful next step might be looking at overlap between crown-fire probability, ownership patterns, and feasible treatment/utilization infrastructure, essentially where restoration could realistically scale fast enough to matter.
+
+The really important systems story may actually be climate stress combined with accumulated fuels and institutional weakening at the same time. That triad is what makes this moment different.
