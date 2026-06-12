@@ -13,12 +13,13 @@ exports:
 ---
 
 # Take-aways
-**Overlap**. 
-**Resilience**
+**Overlap**. The overlap between high crown fire probability and feasible mechanical treatment is low. For instance in the four county Central Sierra, these areas only overlap by 8%. While that's not great for mitigating fire, it could just mean that the most vulnerable areas aren't accessible for mechanical thinning and restoration efforts should be directed to easy to access places that prevent fire from running to higher probability areas.
+<br>
+**Resilience**. It's still unclear whether or not the donut hole areas are more resilent, haven't burned due to biotic or abiotic factors, but they do point to places where a large fire may yet occur and therefore need some attention.
 
 
 # Background
-> "Wildfire season is fast approaching, and with low snowpack, dry conditions, and soaring temperatures across the U.S., experts are warning that 2026 may be one of the worst on record. Combine those extreme conditions with massive restructuring at the U.S. Forest Service (USFS), and the result is a powder keg for federal wildland firefighters." @clarke
+> "Nevada County [is] the next [big fire]. Everydogy in wildland fire knows it. The ingress, egress, how many trees are in that area. I don't want to be there...I know people are going to die in that area. Bill Jacks [@standing]
 
 This is the 2nd of two articles examining vulnerability and resilience across California firescapes. The first [Predicting 2026 Wildfires](https://3point.xyz/predicting_fire2/) explored the potential fire vulnerability of two locations in the Sierra-Cascade region of California. This article explores more of the 'why' behind why large fires have not taken place recently in those regions and whether or not it may be due to dumb luck, or, more likely, abiotic and biotic factors.
 
@@ -43,7 +44,7 @@ This perspective also connects to cultural burning and long-term stewardship. Me
 
 This same systems thinking applies to communities as well. Forest care and home hardening should be seen as complementary elements of resilience, not separate policies. A treated forest around vulnerable communities reacts differently than one that is untreated, just as hardened homes and defensible space perform differently in areas experiencing lower-intensity fires. The interaction between these elements may be as important as any individual intervention.
 
-## Biomass and wood pathways
+## Biomass and fire
 We calculated the percent overlap between crown fire probability [@pyrologix] and mechanical treament feasibility for the four county Central Sierra region [@scenarioA] where the treatment feasibility is <35% slopes and within 1000' (~300m) of existing roads {numref}`over`. We did not examine this for the Shasta-Trinity county region since a treatment feasibility data layer does not yet exist.
 
 :::{figure} overlap.png
@@ -54,10 +55,33 @@ Crown fire probability vs. mechanical treatment feasibility (<35% slopes and wit
 
 Interestingly, most of the treatment feasibility did not overlap with crown fire probability—only 8%—possibly because areas of higher probability may exist on steeper, more remote slopes. Although this is alarming from a wildfire mitigation treatment perspective, e.g., inability to treat the most vulnerable areas, it could be that these areas lack of accessibility may make them less prone to human induced ignitions.
 
+## Inter-agency Tracking System
+On the other hand, if we examine treatments recorded in the Interagency Tracking System treatment tracker there is overlap between treatments and areas of high probability ({numref}`treatments`). Keep in mind that the polygons are large (10,000 ac) and the probabilities represent the median for the entire polygon. As a result, even small treatments could make a big difference over those relatively large landscapes.
+
+:::{figure} its.png
+:label: treatments
+:height: 700
+Interagency Tracking System treatments compared to crown fire probability. There are more treatments in the Central Sierra high probability areas vs. the donut in the Cascades. In fact, the high probability region in northeast Shasta County does not have many treatments.
+:::
+
+Examining this quantitatively it's clear that the treatments in Shasta/Trinity Counties ({numref}`shasta`) are not as focused on high probability acres as the Sierra Counties ({numref}`sierra`). 
+
+:::{figure} shasta_binned.png
+:label: shasta
+:height: 350
+Crown fire probablity vs. percent area treated in Shasta and Trinity Counties. Low 60%, Medium 32%, High 8%.
+:::
+
+:::{figure} sierra_binned.png
+:label: sierra
+:height: 350
+Crown fire probablity vs. percent area treated in Central Sierra Counties. Low 18%, Medium 54%, High 28%.
+:::
+
 ## Wind speed
 Anecdotally, the four county region in the Central Sierra (Nevada, Placer, Sierra, Yuba) has not had a catastrophic wildfire recently because the region has particularly low winds. We examined whether or not there were any such anomalies using a global wind dataset and did not find anything that stood out [@wind]. This could still be the case at local levels, but we have not yet found data to indicate this is the case.
 
-# Conclusions & next steps
+# Conclusions & Next Steps
 One potentially useful next step might be looking at overlap between crown-fire probability, ownership patterns, and feasible treatment/utilization infrastructure, essentially where restoration could realistically scale fast enough to matter.
 
 The really important systems story may actually be climate stress combined with accumulated fuels and institutional weakening at the same time. That triad is what makes this moment different.
