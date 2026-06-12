@@ -1,5 +1,5 @@
 ---
-title: Donut hole as landscape reslience 🔥
+title: Donut hole as landscape resilience 🔥
 abstract: |
   Using lack of fire to interrogate landscape resilience and identifying where intervention matters most rather than just reiterating that fire risk is high everywhere.
 
@@ -14,7 +14,7 @@ exports:
 
 # Take-aways
 **Overlap**. 
-**Resilence**
+**Resilience**
 
 
 # Background
