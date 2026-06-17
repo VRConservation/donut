@@ -14,28 +14,23 @@ exports:
 
 # Take-aways
 **1. Overlap**. The overlap between high crown fire probability and feasible mechanical treatment is low. For instance in the four county Central Sierra, these areas only overlap by 8%. While that's not great for mitigating fire, it could just mean that the most vulnerable areas aren't accessible for mechanical thinning and restoration efforts should be directed to easy to access places that prevent fire from running to higher probability areas.
-
 **2. Resilience**. It's unclear whether or not the donut hole areas are more resilient, haven't burned due to biotic or abiotic factors, but they do point to places where a large fire may yet occur and therefore need some attention.
-
-**3. Priotization**. Using crown fire probability and recent fire history may help prioritize where future mechanical thinning and prescribed fire forest health projects could be prioritized.
-
+**3. Prioritization**. Using crown fire probability and recent fire history may help prioritize where future mechanical thinning and prescribed fire forest health projects could be prioritized.
 
 # Background
 > "Nevada County [is] the next [big fire]. Everybody in wildland fire knows it. The ingress, egress, how many trees are in that area. I don't want to be there...I know people are going to die in that area. Bill Jacks [@standing]
 
-This is the 2nd of two articles examining vulnerability and resilience across California firescapes. The first [Predicting 2026 Wildfires](https://3point.xyz/predicting_fire2/) explored the potential fire vulnerability of two locations in the Sierra-Cascade region of California. This article explores more of the 'why' behind why large fires have not taken place recently in those regions and whether or not it may be due to dumb luck, or, more likely, abiotic and biotic factors.
+This is the 2nd of two articles examining vulnerability and resilience across California firescapes. The first [Predicting 2026 Wildfires](https://3point.xyz/predicting_fire2/) explored the potential fire vulnerability of two 'donut hole' locations in the Sierra-Cascade region of California where large, destructive fires have not occurred recently despite the existence of neighboring fires. This article explores more of the why behind why large fires have not taken place recently in those regions and whether or not it may be due to dumb luck, or, more likely, abiotic and biotic factors.
 
-Our main aim was to identify where intervention matters most rather than just reiterating that fire risk is high everywhere.
+Our main aim was to identify where intervention matters most rather than just reiterating that fire risk is high everywhere after identifying historical fire absence plus crown-fire probability plus treatment context equals areas potentially vulnerable to severe fire under current conditions.
 
 ## Methodology
-The Shasta-Trinity region did not have a mechanical treatment feasibility dataset, so we developed one using the methodology developed by @tukman. Data sources differed slightly where slope came from USGS 3DEP, and treatable vegetation from Landfire's existing vegetation type. Data was processed using a combination of python scripts and tools from QGIS and ArcGIS Pro.
+The Shasta-Trinity region did not have a mechanical treatment feasibility dataset, so we created one using the methodology developed by @tukman. Data sources differed slightly where slope came from USGS 3DEP, and treatable vegetation from the USGS National Land Class Dataset. Data was processed using a combination of Python, the Geospatial Data Abstraction Library (GDAL), QGIS, and ArcGIS Pro.
 
-
-The methodology feels more like this: historical fire absence plus crown-fire probability plus treatment context equals areas potentially vulnerable to severe fire under current conditions.
 
 
 # Donut holes & resilience
-The “donut hole” pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. Your point about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that we need to consider. Shift from generalized narratives about “bad fire years” to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
+The donut hole pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. The point in the first article about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that should be considered for wildfire mitigation. Shift from generalized narratives about bad fire years to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
 
 ## Avoided costs
 The 2014 Mokelumne Watershed Avoided Cost Analysis,suggested that treatment doesn’t have to occur uniformly to provide benefits across larger areas [@moke]. The study modeled that about 30% treatment in strategically connected areas can significantly change fire behavior in larger watershed systems.
@@ -47,15 +42,15 @@ This perspective also connects to cultural burning and long-term stewardship. Me
 This same systems thinking applies to communities as well. Forest care and home hardening should be seen as complementary elements of resilience, not separate policies. A treated forest around vulnerable communities reacts differently than one that is untreated, just as hardened homes and defensible space perform differently in areas experiencing lower-intensity fires. The interaction between these elements may be as important as any individual intervention.
 
 ## Biomass and fire
-We calculated the percent overlap between crown fire probability [@pyrologix] and mechanical treament feasibility for the four county Central Sierra region [@scenarioA] where the treatment feasibility is <35% slopes and within 1000' (just over 300m) of existing roads {numref}`over`. We did not examine this for the Shasta-Trinity county region since a treatment feasibility data layer does not yet exist.
+We calculated the percent overlap between crown fire probability [@pyrologix] and mechanical treament feasibility for the four county Central Sierra region [@scenarioA] where the treatment feasibility is <35% slopes and within 1000' (just over 300m) of existing roads {numref}`over`. We did not examine this in depth for the Shasta-Trinity region since the resulting mechanical treatment feasibility map for the region had 19% overlap for ok for treatment with high (>70%) crown fire probability. One minor difference is the mechanical treatment feasibility is <35% slopes in the Sierra but <40% for the Shasta-Trinity County region.
 
-:::{figure} overlap.png
+:::{figure} Overlap_all.png
 :label: over
 :height: 700
-Crown fire probability vs. mechanical treatment feasibility (<35% slopes and within 1000',just over 300m, of existing roads>). The calculated overlap between the two datasets is 8%.
+Crown fire probability vs. mechanical treatment feasibility (<35% slopes and within 1000',just over 300m, of existing roads>). The calculated overlap between the two datasets is 8% in the Sierra and 19% in the Cascades.
 :::
 
-Interestingly, only 8% of the treatment feasibility overlapped with crown fire probability. This is likely because the most vulnerable areas, those with the highest probability of crown fire, may exist on steeper, more remote slopes making them difficult to access for mechanical treatment. Although this is alarming from a mechanical treatment perspective, it could be that these areas' lack of accessibility may make them less prone to human-induced ignitions.
+Interestingly, only 8% of the treatment feasibility overlapped with crown fire probability in the Central Sierra region. This is likely because the most vulnerable areas, those with the highest probability of crown fire, may exist on steeper, more remote slopes making them difficult to access for mechanical treatment. Although this is alarming from a mechanical treatment perspective, it could be that these areas' lack of accessibility may make them less prone to human-induced ignitions.
 
 ## Inter-agency Tracking System
 On the other hand, if we examine treatments recorded in the Interagency Tracking System treatment tracker there is overlap between treatments and areas of high probability ({numref}`treatments`). Keep in mind that the polygons are large (10,000 ac) and the probabilities represent the median for the entire polygon. As a result, even small treatments could make a big difference over those relatively large landscapes.
@@ -63,7 +58,7 @@ On the other hand, if we examine treatments recorded in the Interagency Tracking
 :::{figure} its.png
 :label: treatments
 :height: 700
-Interagency Tracking System treatments compared to crown fire probability. There are more treatments in the Central Sierra high probability areas vs. the donut in the Cascades. In fact, the high probability region in northeast Shasta County does not have many treatments.
+Crown fire probability vs. Interagency Tracking System treatments. There are more treatments in the Central Sierra high probability areas vs. the donut in the Cascades. In fact, the high probability region in northeast Shasta County does not have many treatments.
 :::
 
 Examining this quantitatively, it's clear that the treatments in Shasta/Trinity Counties ({numref}`shasta`) are not as focused on high probability acres as the Sierra Counties ({numref}`sierra`). 
