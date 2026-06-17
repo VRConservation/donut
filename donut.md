@@ -1,7 +1,7 @@
 ---
 title: Donut hole as landscape resilience 🔥
 abstract: |
-  "Donut hole" patterns—areas where fire has not occurred historically but are surrounded by recent large fires—in California's Sierra-Cascade region, suggest pinpointing where intervention is most necessary, rather than just stating that fire risk is high everywhere. By comparing crown fire probability with the feasibility of mechanical treatments in the four-county Central Sierra, we found only an 8% overlap. This suggests that the areas most vulnerable to fire are often on steep, remote land that is hard to access for conventional thinning. An analysis of the Interagency Tracking System data showed that treatments in Shasta and Trinity Counties do not focus as much on high-probability areas. In contrast, the Central Sierra sees 28% of treated land designated for high-risk zones. This connection acts like ecological herd immunity, reducing the severity of crown fires even without full coverage. These findings highlight a systems-based approach to resilience that combines mechanical treatment, cultural burning, home hardening, and community planning. The approach addresses the growing challenges of climate stress, accumulated fuels, and gaps in institutional capacity.
+  "Donut hole" patterns—areas where fire has not occurred historically but are surrounded by recent large fires—in California's Sierra-Cascade region, suggest pinpointing where intervention is most necessary, rather than just stating that fire risk is high everywhere. By comparing crown fire probability with the feasibility of mechanical treatments in the four-county Central Sierra, we found only an 8% overlap. This suggests that the areas most vulnerable to fire are often on steep, remote land that is hard to access for conventional thinning. An analysis of the Interagency Tracking System data showed that treatments in Shasta and Trinity Counties do not focus as much on high-probability areas. In contrast, the Central Sierra sees 28% of treated land designated for high-risk zones. This connection acts like ecological herd immunity, reducing the severity of crown fires even without full coverage. These findings highlight a systems-based approach to resilience that combines mechanical treatment, cultural burning, home hardening, and community planning. The approach addresses the growing challenges of where to prioritize and treat landscapes to reduce fire while increasing forest health and resilience across large landscapes.
 
 exports:
     - format: docx
@@ -14,7 +14,9 @@ exports:
 
 # Take-aways
 **1. Overlap**. The overlap between high crown fire probability and feasible mechanical treatment is low. For instance in the four county Central Sierra, these areas only overlap by 8%. While that's not great for mitigating fire, it could just mean that the most vulnerable areas aren't accessible for mechanical thinning and restoration efforts should be directed to easy to access places that prevent fire from running to higher probability areas.
-**2. Resilience**. It's unclear whether or not the donut hole areas are more resilient, haven't burned due to biotic or abiotic factors, but they do point to places where a large fire may yet occur and therefore need some attention.
+<br>
+**2. Resilience**. It's unclear whether or not the donut hole areas are more resilient, haven't burned due to biotic or abiotic factors, but they do point to places where a large fire may yet occur and therefore need some attention. They also offer opportunities to scale treatments due to surrounding burn lines from previous fires.
+<br>
 **3. Prioritization**. Using crown fire probability and recent fire history may help prioritize where future mechanical thinning and prescribed fire forest health projects could be prioritized.
 
 # Background
@@ -27,10 +29,8 @@ Our main aim was to identify where intervention matters most rather than just re
 ## Methodology
 The Shasta-Trinity region did not have a mechanical treatment feasibility dataset, so we created one using the methodology developed by @tukman. Data sources differed slightly where slope came from USGS 3DEP, and treatable vegetation from the USGS National Land Class Dataset. Data was processed using a combination of Python, the Geospatial Data Abstraction Library (GDAL), QGIS, and ArcGIS Pro.
 
-
-
 # Donut holes & resilience
-The donut hole pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. The point in the first article about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that should be considered for wildfire mitigation. Shift from generalized narratives about bad fire years to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
+The donut hole pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. These islands offer an opportunity to scale treatments to larger areas due to natural burn lines and reduced cost of constructing control lines [@wilson]. The point in the first article about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that should be considered for wildfire mitigation. Shift from generalized narratives about bad fire years to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
 
 ## Avoided costs
 The 2014 Mokelumne Watershed Avoided Cost Analysis,suggested that treatment doesn’t have to occur uniformly to provide benefits across larger areas [@moke]. The study modeled that about 30% treatment in strategically connected areas can significantly change fire behavior in larger watershed systems.
@@ -78,5 +78,7 @@ Crown fire probablity vs. percent area treated in Central Sierra Counties. Low 1
 ## Wind speed
 Anecdotally, the four county region in the Central Sierra (Nevada, Placer, Sierra, Yuba) has not had a catastrophic wildfire recently because the region has particularly low winds. We examined whether or not there were any such anomalies using a global wind dataset and did not find anything that stood out [@wind]. This could still be the case at local levels, but we have not yet found data to indicate this is the case.
 
-# Conclusion
-Donut hole patterns provide a practical way to pinpoint where wildfire intervention is most needed. In the Central Sierra, only 8% of high crown fire probability overlaps with areas that can be treated mechanically. The locations most at risk for severe fire are often the hardest to access. Still, strategic prioritization is essential. The Central Sierra devotes 28% of its treatment efforts to high-probability areas, while Shasta and Trinity Counties focus only 8% there. Research from the Mokelumne Watershed indicates that treating about 30% of a landscape in strategically connected patterns can influence fire behavior over a much larger area. This concept is similar to herd immunity and does not require every acre to be treated. A useful next step is to look at the overlap between crown fire probability, land ownership patterns, and treatment infrastructure. This analysis can help identify where restoration can realistically scale quickly enough to be effective. Ultimately, the most significant systems issue may be the combination of climate stress, accumulated fuels, and institutional weakening occurring simultaneously. This triad sets this moment apart from previous fire eras and calls for not only better spatial targeting but also ongoing investment in cross-boundary coordination and cultural burning practices.
+# Applications
+Donut hole patterns provide a practical way to pinpoint where wildfire intervention is most needed. In the Central Sierra, only 8% of high crown fire probability overlaps with areas that can be treated mechanically. The locations most at risk for severe fire are often the hardest to access. Still, strategic prioritization is essential. 
+
+This analysis can help identify where restoration can realistically scale quickly enough to be effective. 
