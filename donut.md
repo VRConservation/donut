@@ -12,6 +12,13 @@ exports:
       output: exports/donut.pdf  
 ---
 
+:::{image} rxfire2.png
+:width: 700px
+:label: fire
+:align: center
+Prescribed fire burn
+:::
+
 # Take-aways
 **1. Overlap**. The overlap between high crown fire probability and feasible mechanical treatment is low. For instance in the four county Central Sierra, these areas only overlap by 8%. While that's not great for mitigating fire, it could just mean that the most vulnerable areas aren't accessible for mechanical thinning and restoration efforts should be directed to easy to access places that prevent fire from running to higher probability areas.
 <br>
@@ -30,7 +37,10 @@ Our main aim was to identify where intervention matters most rather than just re
 The Shasta-Trinity region did not have a mechanical treatment feasibility dataset, so we created one using the methodology developed by @tukman. Data sources differed slightly where slope came from USGS 3DEP, and treatable vegetation from the USGS National Land Class Dataset. Data was processed using a combination of Python, the Geospatial Data Abstraction Library (GDAL), QGIS, and ArcGIS Pro.
 
 # Donut holes & resilience
-The donut hole pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. These islands offer an opportunity to scale treatments to larger areas due to natural burn lines and reduced cost of constructing control lines [@wilson]. The point in the first article about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that should be considered for wildfire mitigation. Shift from generalized narratives about bad fire years to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
+The donut hole pattern in the Sierra/Nevada region is especially useful because it raises the question of whether some landscapes are functionally more resilient or just overdue for a major fire. These islands offer an opportunity to scale treatments to larger areas due to natural burn lines and reduced cost of constructing control lines [@wilson] therefore, the fires themselves act as a treatment [@shive2025]. The point in the first article about the fragmented treatment of private parcels in the WUI is important; there is a real herd immunity metaphor in fire hardening that should be considered for wildfire mitigation. Shift from generalized narratives about bad fire years to identifying specific areas of vulnerability through the overlap of fire history gaps and crown-fire probability.
+
+## Wind speed
+Anecdotally, the four county region in the Central Sierra (Nevada, Placer, Sierra, Yuba) has not had a catastrophic wildfire recently because the region has particularly low winds. We examined whether or not there were any such anomalies using a global wind dataset and did not find anything that stood out [@wind]. This could still be the case at local levels, but we have not yet found data to indicate this is the case.
 
 ## Avoided costs
 The 2014 Mokelumne Watershed Avoided Cost Analysis,suggested that treatment doesn’t have to occur uniformly to provide benefits across larger areas [@moke]. The study modeled that about 30% treatment in strategically connected areas can significantly change fire behavior in larger watershed systems.
@@ -75,10 +85,5 @@ Crown fire probablity vs. percent area treated in Shasta and Trinity Counties. L
 Crown fire probablity vs. percent area treated in Central Sierra Counties. Low 18%, Medium 54%, High 28%.
 :::
 
-## Wind speed
-Anecdotally, the four county region in the Central Sierra (Nevada, Placer, Sierra, Yuba) has not had a catastrophic wildfire recently because the region has particularly low winds. We examined whether or not there were any such anomalies using a global wind dataset and did not find anything that stood out [@wind]. This could still be the case at local levels, but we have not yet found data to indicate this is the case.
-
 # Applications
-Donut hole patterns provide a practical way to pinpoint where wildfire intervention is most needed. In the Central Sierra, only 8% of high crown fire probability overlaps with areas that can be treated mechanically. The locations most at risk for severe fire are often the hardest to access. Still, strategic prioritization is essential. 
-
-This analysis can help identify where restoration can realistically scale quickly enough to be effective. 
+Donut hole patterns provide a practical way to pinpoint where wildfire intervention is most needed with previous surrounding fires acting as natural fire breaks. In the Central Sierra, only 8% of high crown fire probability overlaps with areas that can be treated mechanically. The locations most at risk for severe fire are often the hardest to access. Still, strategic prioritization is essential. 
