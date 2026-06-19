@@ -27,7 +27,7 @@ Prescribed fire in the Sierra Nevada.
 3. **Mechanical treatment is a transition, not the final goal**. Thinning restores conditions that allow good fire, prescribed fire, cultural burning, fire away from the WUI, to return safely ({numref}`fire`). Forest treatment, home hardening, defensible space, and community planning work together as complementary layers of a single resilience system.  
 
 # Background
-> "Nevada County [is] the next [big fire]. Everybody in wildland fire knows it. The ingress, egress, and the number of trees in that area. I don't want to be there...I know people are going to die..." Bill Jacks [@standing]
+> "Nevada County [is] the next [big fire]. Everybody in wildland fire knows it. The ingress, egress, and the number of trees in that area. I don't want to be there...I know people are going to die in that area. Bill Jacks [@standing]
 
 Much public discussion about wildfire focuses on annual forecasts, drought conditions, and the prospect of another catastrophic season. Those concerns are real, but they can obscure a more practical question: where should limited resources be deployed to most effectively reduce future risk?
 
