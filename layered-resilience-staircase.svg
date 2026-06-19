@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="520" viewBox="0 0 680 520" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Layered wildfire resilience as a descending staircase of overlapping protections</title>
+<desc>A schematic showing four wildfire resilience interventions as a monotonic descending staircase: treated forest at landscape scale at top left, stepping consistently down and to the right through community planning and defensible space, ending at hardened structures at building scale in the lower right as the final layer of protection. Each step rests on and overlaps the one before it, and the overlaps are where adjacent layers reinforce each other.</desc>
+<style>
+.th { font-size: 14px; font-weight: 500; }
+.ts { font-size: 12px; font-weight: 400; }
+</style>
+
+<text class="th" x="40" y="38" fill="#2C2C2A">Layered resilience as a descending staircase</text>
+<text class="ts" x="40" y="58" fill="#5F5E5A">From landscape to building scale. Each step rests on the one before; the overlaps reinforce.</text>
+
+<rect x="40" y="92" width="300" height="86" rx="14" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text class="th" x="60" y="120" fill="#27500A">Treated forest</text>
+<text class="ts" x="60" y="140" fill="#3B6D11">Landscape scale</text>
+
+<rect x="140" y="158" width="300" height="86" rx="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="th" x="160" y="186" fill="#085041">Community planning</text>
+<text class="ts" x="160" y="206" fill="#0F6E56">Settlement scale</text>
+
+<rect x="240" y="224" width="300" height="86" rx="14" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="th" x="260" y="252" fill="#633806">Defensible space</text>
+<text class="ts" x="260" y="272" fill="#854F0B">Parcel scale</text>
+
+<rect x="340" y="290" width="300" height="86" rx="14" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text class="th" x="360" y="318" fill="#712B13">Hardened structures</text>
+<text class="ts" x="360" y="338" fill="#993C1D">Building scale</text>
+
+<text class="ts" x="40" y="424" fill="#5F5E5A"><tspan x="40" dy="0">No single treatment layer is sufficient. A treated forest changes how fire arrives; a hardened</tspan><tspan x="40" dy="20">home changes what happens when it does. Community planning and defensible space connect</tspan><tspan x="40" dy="20">the two. Protection comes from the overlaps, where one layer covers what another cannot. A</tspan><tspan x="40" dy="20">gap at any scale lets fire through.</tspan></text>
+</svg>
