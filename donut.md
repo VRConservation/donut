@@ -76,7 +76,7 @@ The donut hole pattern ({numref}`donut-graphic`) is useful because it raises a q
 
 :::{figure} donut.png
 :label: donut-graphic
-:height: 300
+:height: 350
 Donut hole conceptual model: a schematic of where treatment has the most leverage
 :::
 
