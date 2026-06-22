@@ -3,7 +3,7 @@ title: Donut hole as landscape resilience 🔥
 abstract: |
   Wildfire risk is high across much of California, but not all landscapes are equally vulnerable, and not all interventions produce equal benefits. Donut hole patterns, areas where fire has not occurred recently despite being surrounded by large fires, point toward where intervention matters most rather than simply restating that risk is high everywhere. By comparing crown fire probability with mechanical treatment feasibility in the four-county Central Sierra, we found only an 8% overlap, and 19% in the Shasta-Trinity Cascades. The most vulnerable areas are often steep, remote land that is difficult to reach through conventional thinning. Interagency Tracking System data show that recent treatments in Shasta and Trinity Counties concentrate less on high-probability acres than those in the Central Sierra, though the coarse resolution of the tracking polygons limits how finely that pattern can be interpreted.
 
-  These findings suggest that wildfire resilience may depend less on treating every acre and more on identifying high-leverage locations where intervention can alter outcomes across much larger portions of a firescape. They support a systems-based approach that treats mechanical thinning, cultural burning, prescribed fire, home hardening, and community planning as connected parts of one strategy, reframing wildfire mitigation as a problem of prioritization rather than universal coverage.
+  These findings suggest that wildfire resilience may depend less on treating every acre and more on identifying high-leverage locations where intervention can alter outcomes across much larger portions of a firescape. They support a systems-based approach that treats mechanical thinning, cultural burning, prescribed fire, home hardening, and community planning as interconnected parts of a single strategy, reframing wildfire mitigation as a matter of prioritization rather than universal coverage.
 
 exports:
     - format: docx
@@ -33,7 +33,7 @@ Much public discussion about wildfire focuses on annual forecasts, drought condi
 
 This is the second of two articles examining vulnerability and resilience across California firescapes. The first article identified two donut hole locations in the Sierra-Cascade region where large, destructive fires have not occurred recently, despite neighboring fire activity [@russell]. This article asks why those landscapes have remained unburned, whether that pattern reflects luck, resilience, or accumulated risk, and what it can teach us about where intervention can most effectively change outcomes.
 
-The working premise is straightforward: Historical absence of fire, combined with elevated crown-fire probability and treatment context, identifies areas potentially vulnerable to severe fire under current conditions.
+The working premise is straightforward: the historical absence of fire, combined with elevated crown-fire probability and treatment context, identifies areas that are potentially vulnerable to severe fire under current conditions.
 
 # Methodology
 We used the following geographic location, data, processing, and visualization methods for this study:
@@ -72,7 +72,13 @@ Data was processed using a combination of Python, the Geospatial Data Abstractio
 Map graphics were developed using ArcGIS Pro layouts and exported to png's. Graphics and rendering were done through mystmd.org executable book software.
 
 # Donut Holes, Islands, & Resilience
-The donut hole pattern is useful because it raises a question that hazard mapping alone cannot answer: are these landscapes functionally resilient, or simply overdue for a major fire? The answer determines whether they should be interpreted as examples of successful adaptation or as concentrations of accumulated risk.
+The donut hole pattern ({numref}`donut-graphic`) is useful because it raises a question that hazard mapping alone cannot answer: are these landscapes functionally resilient, or simply overdue for a major fire? The answer determines whether they should be interpreted as examples of successful adaptation or as concentrations of accumulated risk.
+
+:::{figure} donut.png
+:label: donut-graphic
+:height: 350
+Donut hole conceptual model: a schematic of where treatment has the most leverage.
+:::
 
 Recent work by @wilson describes similar patterns as islands within larger fire landscapes. These islands offer opportunities to scale treatment across broader areas because surrounding burn scars have already established portions of the control network that would otherwise need to be built through future treatment or suppression. In that sense, the fires themselves can function as treatments [@shive2025].
 
@@ -142,6 +148,12 @@ Donut hole patterns offer a practical way to identify where intervention may mat
 
 In the Central Sierra, only 8% of high crown-fire probability overlaps with mechanically treatable land, meaning the places most at risk are often the hardest to reach. That makes strategic prioritization more important, not less.
 
-Combining fire history, crown-fire probability, treatment feasibility, ownership patterns, cultural burning opportunity, and community exposure moves wildfire planning from hazard mapping toward resilience planning. The future of mitigation may depend less on treating everything than on understanding where relatively small interventions can create disproportionately large benefits across an entire firescape. Resilience emerges not simply from the number of acres treated, but from how treatments, stewardship practices, communities, and fire itself are connected across the landscape.
+Combining fire history, crown-fire probability, treatment feasibility, ownership patterns, cultural burning opportunity, and community exposure moves wildfire planning from hazard mapping toward resilience planning {numref}`layer-graphic`. The future of mitigation may depend less on treating everything than on understanding where relatively small interventions can create disproportionately large benefits across an entire firescape. Resilience emerges not simply from the number of acres treated, but from how treatments, stewardship practices, communities, and fire itself are connected across the landscape.
+
+:::{figure} layered.png
+:label: layer-graphic
+:height: 450
+Layered resilience as a descending staircase where each step from landscape to building scale rests on the previous layer. The overlapping layers reinforce one another, and no single treatment layer is sufficient to mitigate wildfire. A treated forest changes how a fire arrives; a hardened home changes what happens when it does. Community planning and defensible space connect the two. Protection comes from the overlapping scales, where one layer covers what another cannot. Any gaps in coverage let the fire through.
+:::
 
 Ultimately, the goal is not treatment for its own sake. It is to restore landscapes capable of supporting good fire, allowing prescribed fire, cultural burning, and naturally occurring fire to resume their historic role in maintaining healthy, resilient forests.
